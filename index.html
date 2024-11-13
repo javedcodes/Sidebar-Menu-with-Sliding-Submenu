@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information about the page -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page Title -->
+    <title>Pet Care Admin Dashboard | JV Codes</title>
+    
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Font Awesome CDN for icons used in the menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+  <!-- Sidebar navigation for the admin dashboard -->
+    <nav class="sidebar">
+      <!-- Logo or brand name -->
+      <a href="#" class="logo">Pet Care Admin</a>
+
+      <!-- Main menu content -->
+      <div class="menu-content">
+        <ul class="menu-items">
+          <!-- Title of the main menu section -->
+          <div class="menu-title">Main Menu</div>
+
+          <!-- Dashboard menu item with icon -->
+          <li class="item">
+            <a href="#"><i class="fa-solid fa-tachometer-alt"></i> Dashboard</a>
+          </li>
+
+          <!-- Pets menu item with icon -->
+          <li class="item">
+            <a href="#"><i class="fa-solid fa-paw"></i> Pets</a>
+          </li>
+
+          <!-- Clients submenu section with sliding submenu -->
+          <li class="item">
+            <div class="submenu-item">
+              <span><i class="fa-solid fa-users"></i> Clients</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            
+            <!-- Submenu items for client management -->
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i> Client Management
+              </div>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-user-plus"></i> Add Client</a>
+              </li>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-user-edit"></i> Edit Client</a>
+              </li>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-address-book"></i> Client List</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Appointments submenu section with sliding submenu -->
+          <li class="item">
+            <div class="submenu-item">
+              <span><i class="fa-solid fa-calendar-check"></i> Appointments</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <!-- Submenu items for appointment management -->
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i> Appointment Management
+              </div>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-calendar-plus"></i> Schedule Appointment</a>
+              </li>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-calendar-day"></i> View Appointments</a>
+              </li>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-calendar-times"></i> Cancel Appointment</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Billing submenu section with sliding submenu -->
+          <li class="item">
+            <div class="submenu-item">
+              <span><i class="fa-solid fa-file-invoice"></i> Billing</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <!-- Submenu items for billing management -->
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i> Billing Management
+              </div>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i> Invoices</a>
+              </li>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-receipt"></i> Payment History</a>
+              </li>
+              <li class="item">
+                <a href="#"><i class="fa-solid fa-credit-card"></i> Payment Methods</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Reports menu item with icon -->
+          <li class="item">
+            <a href="#"><i class="fa-solid fa-chart-bar"></i> Reports</a>
+          </li>
+
+          <!-- Settings menu item with icon -->
+          <li class="item">
+            <a href="#"><i class="fa-solid fa-cog"></i> Settings</a>
+          </li>
+
+          <!-- Logout menu item with icon -->
+          <li class="item">
+            <a href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Top navigation bar for sidebar toggle -->
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+
+    <!-- Main content area of the admin dashboard -->
+    <main class="main">
+      <h1>Admin Dashboard Content</h1>
+    </main>
+
+    <!-- Link to external JavaScript for interactive elements -->
+    <script src="script.js"></script>
+</body>
+</html>

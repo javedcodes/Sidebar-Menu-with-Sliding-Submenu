@@ -1,0 +1,173 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Global reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #060318;
+  padding: 15px;
+  z-index: 99;
+}
+
+/* Sidebar logo styling */
+.logo {
+  font-size: 25px;
+  color: #e8e8ea; /* Lighter color for logo text */
+  padding: 0 15px;
+}
+
+/* General link styling within the sidebar */
+.sidebar a {
+  color: #e8e8ea;
+  text-decoration: none;
+}
+
+/* Container for menu content within the sidebar */
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+/* Hide default scrollbar in sidebar */
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menu items styling */
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+/* Active submenu styling - shifts items slightly */
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+
+/* Main menu title styling */
+.menu-title {
+  color: #e8e8ea;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+/* Styling for links and submenu item containers */
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+  color: #e8e8ea;
+}
+
+/* Icon styling within menu items */
+.item i {
+  font-size: 12px;
+}
+
+/* Hover effect for menu and submenu items */
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1); /* Light overlay for hover */
+}
+
+/* Submenu toggle area styling */
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Submenu container styling */
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  background: #060318;
+  display: none;
+}
+
+/* Show submenu when active */
+.show-submenu ~ .submenu {
+  display: block;
+}
+
+/* Submenu title styling */
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Submenu title icon alignment */
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+
+/* Navbar and main content positioning */
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+/* Adjust positioning when sidebar is collapsed */
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #5b045e; /* Updated color for navbar */
+  cursor: pointer;
+}
+
+/* Sidebar toggle icon in navbar */
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+
+/* Main content area styling */
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+  background: #fffabb;
+}
+
+/* Main content heading styling */
+.main h1 {
+  color: #2b2a33;
+  font-size: 40px;
+  text-align: center;
+}
